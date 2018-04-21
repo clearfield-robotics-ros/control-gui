@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+  <qresource>
+	<file>cage.png</file>
+	<file>northArrow.png</file>
+	<file>southArrow.png</file>
+	<file>eastArrow.png</file>
+	<file>westArrow.png</file>
+  </qresource>
+</RCC>

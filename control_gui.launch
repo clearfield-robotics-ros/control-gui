@@ -1,0 +1,6 @@
+<launch>
+  <group ns="whatever_you_want">
+    <node name="control_gui" type="control_gui.py" pkg="control_gui" output="screen">
+    </node>
+  </group>
+</launch>

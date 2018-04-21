@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>cage.png</file>
+        <file>northArrow.png</file>
+        <file>southArrow.png</file>
+        <file>eastArrow.png</file>
+        <file>westArrow.png</file>
+        <file>hb-on-small.png</file>
+        <file>hb-off-small.png</file>
+        <file>southWestArrow.png</file>
+        <file>southEastArrow.png</file>
+        <file>northWestArrow.png</file>
+        <file>northEastArrow.png</file>
+    </qresource>
+</RCC>
