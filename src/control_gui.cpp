@@ -101,7 +101,7 @@ void ControlGUI::currentStateClbk(const std_msgs::Int16 &msg)
         emit setIdlePr(blue);
         emit setActiveMark(transparent);
         emit setIdleMark(blue);
-//        ui_.startButton->setEnabled(true);
+        ui_.startButton->setEnabled(true);
         break;
     case 1: // Calibrating
         emit setStopGoText("STOP");
