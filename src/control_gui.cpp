@@ -101,7 +101,7 @@ void ControlGUI::currentStateClbk(const std_msgs::Int16 &msg)
         emit setIdlePr(blue);
         emit setActiveMark(transparent);
         emit setIdleMark(blue);
-        ui_.startButton->setEnabled(true);
+        // ui_.startButton->setEnabled(true);
         break;
     case 1: // Calibrating
         emit setStopGoText("STOP");
@@ -113,7 +113,7 @@ void ControlGUI::currentStateClbk(const std_msgs::Int16 &msg)
         emit setActiveMark(orange);
         emit setIdleMark(transparent);
 //        ui_.endButton->setEnabled(false);
-        ui_.startButton->setEnabled(true);
+        // ui_.startButton->setEnabled(true);
         break;
     case 2: // General Surveying
         emit setStopGoText("GO");
@@ -171,8 +171,8 @@ void ControlGUI::onInitButtonClicked()
 
 void ControlGUI::onStartButtonClicked()
 {
-    ui_.startButton->setEnabled(false); // can't start anymore
-    ui_.endButton->setEnabled(true); // but have the option to stop
+    // ui_.startButton->setEnabled(false); // can't start anymore
+    // ui_.endButton->setEnabled(true); // but have the option to stop
     std_msgs::Int16 state;
     state.data = 2; // sweep!
     desired_state_pub.publish(state);
@@ -180,11 +180,11 @@ void ControlGUI::onStartButtonClicked()
 
 void ControlGUI::onEndButtonClicked()
 {
-    ui_.endButton->setEnabled(false); // you're done!
-    ui_.startButton->setEnabled(true); // but you can start again
-    std_msgs::Int16 state;
-    state.data = 0; // put it into idle
-    desired_state_pub.publish(state);
+    // ui_.endButton->setEnabled(false); // you're done!
+    // ui_.startButton->setEnabled(true); // but you can start again
+//    std_msgs::Int16 state;
+//    state.data = 0; // put it into idle
+//    desired_state_pub.publish(state);
 }
 
 }

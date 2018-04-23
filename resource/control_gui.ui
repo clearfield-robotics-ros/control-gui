@@ -514,7 +514,7 @@ color: rgb(255, 255, 255);</string>
       <item>
        <widget class="QPushButton" name="startButton">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -550,7 +550,7 @@ color: rgb(255, 255, 255);</string>
       <item>
        <widget class="QPushButton" name="endButton">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
